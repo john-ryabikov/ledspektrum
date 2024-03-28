@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/ledspektrum/static/css/main.2cdfc69f.css",
+    "main.js": "/ledspektrum/static/js/main.f72e49f4.js",
+    "index.html": "/ledspektrum/index.html",
+    "main.2cdfc69f.css.map": "/ledspektrum/static/css/main.2cdfc69f.css.map",
+    "main.f72e49f4.js.map": "/ledspektrum/static/js/main.f72e49f4.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2cdfc69f.css",
+    "static/js/main.f72e49f4.js"
+  ]
+}
