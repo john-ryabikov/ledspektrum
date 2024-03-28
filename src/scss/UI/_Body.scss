@@ -1,0 +1,34 @@
+.body-fon-1 {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100vw;
+    z-index: -1;
+}
+.body-fon-2 {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100vw;
+    z-index: -1;
+}
+.body-fon-3 {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100vw;
+    z-index: -1;
+}
+
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+    .body-fon-1, .body-fon-2, .body-fon-3  {
+        width: auto;
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 1179px) {
+}
+@media only screen and (min-width: 1180px) and (max-width: 1300px) {
+} 

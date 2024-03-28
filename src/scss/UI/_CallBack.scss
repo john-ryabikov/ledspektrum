@@ -1,0 +1,46 @@
+.callback {
+    @include flex-row();
+    justify-content: flex-end;
+    &__phone {
+        font-weight: 700;
+        font-size: 24px;
+        text-align: right;
+        color: #fff;
+        margin-right: 10px;
+    }
+    &__link {
+        @include flex-column();
+        width: 60px;
+        height: 60px;
+        border-radius: 30px;
+        background-color: rgba(69, 69, 69, 0.4);
+        margin-right: 10px;
+        cursor: pointer;
+        transition: all 0.4s;
+        &:last-child {
+            margin-right: 0;
+        }
+        &:hover {
+            transform: scale(1.04, 1.04);
+        }
+    }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+    .callback {
+        &__phone {
+            font-size: 15px;
+        }
+        &__link {
+            width: 40px;
+            height: 40px;
+        }
+        &__link-icon {
+            width: 18px;
+        }
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 1179px) {
+}
+@media only screen and (min-width: 1180px) and (max-width: 1300px) {
+} 

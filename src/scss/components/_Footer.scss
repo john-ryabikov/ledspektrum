@@ -1,0 +1,71 @@
+.footer {
+    @include flex-column();
+    padding-top: 30px;
+    padding-bottom: 30px;
+    width: 100%;
+    border-top: 1px solid #4a4a4a;
+    &__cont {
+        @include flex-column();
+        justify-content: flex-start;
+        width: 100%;
+    }
+    &__contacts {
+        @include flex-row();
+        justify-content: space-between;
+        width: 100%;
+        padding-bottom: 30px;
+    }
+    &__rights {
+        @include flex-row();
+        justify-content: space-between;
+        width: 100%;
+        padding-top: 30px;
+        border-top: 1px solid #4a4a4a;
+    }
+    &__copyrights {
+        position: relative;
+        font-weight: 400;
+        font-size: 12px;
+        color: rgba(255, 255, 255, 0.7);
+    }
+    &__author {
+        position: relative;
+        font-weight: 300;
+        font-size: 12px;
+        color: rgba(255, 255, 255, 0.7);
+    }
+    &__author-link {
+        position: relative;
+        font-weight: 800;
+        color: #fff;
+        transition: all 0.4s;
+        &:hover {
+            opacity: 0.4;
+        }
+    }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+    .footer {
+        &__contacts {
+            @include flex-column();
+            justify-content: flex-start;
+        }
+        &__labeles {
+            width: 85%;
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+        &__rights {
+            @include flex-column();
+            justify-content: flex-start;
+        }
+        &__copyrights {
+            margin-bottom: 10px;
+        }
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 1179px) {
+}
+@media only screen and (min-width: 1180px) and (max-width: 1300px) {
+} 

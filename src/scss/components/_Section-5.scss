@@ -1,0 +1,161 @@
+.block-5 {
+    @include flex-column();
+    padding-top: 110px;
+    padding-bottom: 110px;
+    width: 100%;
+    &__cont {
+        @include flex-column();
+        justify-content: flex-start;
+        width: 100%;
+    }
+    &__info-1 {
+        @include flex-row();
+        justify-content: space-between;
+        width: 100%;
+        margin-bottom: 80px;
+    }
+    &__info-1-list {
+        @include flex-column();
+        align-items: flex-start;
+        justify-content: space-between;
+        width: 446px;
+        height: 310px;
+        background-color: rgba(78, 78, 78, 0.2);
+        border-radius: 40px;
+        padding: 50px 43px;
+    }
+    &__list-pos {
+        position: relative;
+        font-weight: 300;
+        font-size: 20px;
+        color: #fff;
+    }
+    &__info-2 {
+        @include flex-column();
+        justify-content: flex-start;
+        width: 1115px;
+    }
+    &__info-2-title {
+        @include flex-row();
+        width: 100%;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 140%;
+        color: rgba(255, 255, 255, 0.7);
+        margin-bottom: 70px;
+        span {  
+            @include flex-column();
+            border-radius: 30px;
+            width: 32px;
+            height: 32px;
+            background-color: rgba(131, 131, 131, 0.7);
+            margin-right: 10px;
+            font-weight: 700;
+            font-size: 18px;
+            text-align: center;
+            color: #fff;
+        }
+    }
+    &__info-2-row {
+        @include flex-row();
+        justify-content: space-between;
+        width: 1180px;
+        margin-top: 80px;
+    }
+    &__info-2-rowpart {
+        @include flex-column();
+        width: 590px;
+    }
+    &__pdf-file {
+        @include flex-column();
+        width: 490px;
+        margin-top: 110px;
+    }
+    &__pdf-title {
+        position: relative;
+        font-weight: 800;
+        font-size: 28px;
+        color: #fff;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    &__pdf-btn {
+        @include flex-row();
+        width: 100%;
+        transition: all 0.4s;
+        span {
+            font-weight: 300;
+            font-size: 18px;
+            line-height: 140%;
+            color: rgba(255, 255, 255, 0.7);
+            margin-left: 30px;
+            transition: all 0.4s;
+        }
+        &:hover {
+            span {
+                opacity: 0.4;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+    .block-5 {
+        &__info-1 {
+            @include flex-column();
+            justify-content: flex-start;
+        }
+        &__info-1-list {
+            width: 100%;
+            height: 290px;
+            margin-bottom: 80px;
+        }
+        &__list-pos {
+            font-size: 14px;
+        }
+        &__info-1-img {
+            width: 100%;
+        }
+        &__info-2 {
+            width: 100%;
+        }
+        &__info-2-title {
+            width: 100%;
+            font-size: 14px;
+            padding-left: 50px;
+            span {  
+                position: absolute;
+                left: 0;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+        }
+        &__info-2-img-1 {
+            width: 100%;
+        }
+        &__info-2-row {
+            @include flex-column();
+            justify-content: flex-start;
+            width: 100%;
+        }
+        &__info-2-rowpart {
+            width: 100%;
+            margin-bottom: 80px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+        &__pdf-file {
+            width: 100%;
+        }
+        &__pdf-btn {
+            span {
+                font-size: 13px;
+            }
+        }
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 1179px) {
+}
+@media only screen and (min-width: 1180px) and (max-width: 1300px) {
+} 

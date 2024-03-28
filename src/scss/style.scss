@@ -1,0 +1,104 @@
+/*Стандартные настройки страницы 
+=======================================*/
+
+* {box-sizing: border-box;}
+html {font-family: 'Inter', sans-serif; font-style: normal; overflow-x: hidden;}
+body {margin: 0; padding: 0; overflow-x: hidden; background-color: #0d0d0e;}
+a {text-decoration: none;}
+p {margin: 0;user-select: none;}
+input::placeholder {font-family: sans-serif; font-weight: 200; color: rgba(255, 255, 255, 0.70); font-size: 18px;}
+textarea::placeholder {font-family: sans-serif; font-weight: 200; color: rgba(255, 255, 255, 0.70); font-size: 18px;}
+h1,h2,h3,h4,h5,h6 {font-weight: inherit; font-size: inherit; user-select: none; margin: 0;padding: 0;}
+ul[class],ol[class] {list-style: none;margin: 0;}
+.uncor {position: absolute; top: 20px; left: 0;}
+#main {top: 0;}
+.overflow-lock {overflow-y: hidden;}
+button {background: none; border: none; padding: 0;}
+section {z-index: 1;}
+.main {position: relative; display: flex; flex-direction: column; align-items: center; justify-content: flex-start; width: 100vw;}
+
+//Миксины   --------------------------------------------------------------------------------------------------------------------------------------------------------
+
+@import "functions/mixins";
+
+//Фон сайта  -------------------------------------------------------------------------------------------------------------------------------
+
+@import "UI/Body";
+
+//Обертка сайта  -------------------------------------------------------------------------------------------------------------------------------
+
+@import "UI/Wrapper";
+
+//Аллерты   --------------------------------------------------------------------------------------------------------------------------------------------------------
+
+/*АЛЛЕРТ ФОРМЫ
+=======================================*/
+
+// @import "fragments/alert-form";
+
+/*ОБРАТНАЯ СВЯЗЬ
+=======================================*/
+
+@import "UI/CallBack";
+
+/*ЗАГОЛОВКИ
+=======================================*/
+
+@import "UI/Title";
+
+/*СВЕТИЛЬНИКИ
+=======================================*/
+
+@import "UI/LedLight";
+
+//Основа сайта    -------------------------------------------------------------------------------------------------------------------------------------------------------
+
+/*ШАПКА САЙТА
+=======================================*/
+
+@import "components/Header";
+
+/*БЛОК-1
+=======================================*/
+
+@import "components/Section-1";
+
+/*БЛОК-2
+=======================================*/
+
+@import "components/Section-2";
+
+/*БЛОК-3
+=======================================*/
+
+@import "components/Section-3";
+
+/*БЛОК-4
+=======================================*/
+
+@import "components/Section-4";
+
+/*ГАЛЕРЕЯ
+=======================================*/
+
+@import "components/Gallery";
+
+/*БЛОК-5
+=======================================*/
+
+@import "components/Section-5";
+
+/*БЛОК-6
+=======================================*/
+
+@import "components/Section-6";
+
+/*ПОДВАЛ САЙТА
+=======================================*/
+
+@import "components/Footer";
+
+/*МОБИЛЬНОЕ МЕНЮ
+=======================================*/
+
+// @import "fragments/menu";
